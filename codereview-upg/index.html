@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Codereview upg</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="events">
+                <h1 class="events__title">Events</h1>
+                <form class="events__search-container" action="">
+                    <input
+                        class="events__search-input"
+                        type="text"
+                        placeholder="         Search events" />
+                    <button class="events__search-button" type="submit">
+                        <i class="events__search-icon fa fa-search"></i>
+                    </button>
+                </form>
+
+                <ul class="events__list">
+                    <li class="events__list-item">
+                        <section class="events__date-box">
+                            <p class="events__date">29 MAR</p>
+                        </section>
+                        <section class="events__details">
+                            <h2 class="events__name">Lasse-Stefanz</h2>
+                            <h3 class="events__place">Kjell Hörnqvistsalen</h3>
+                            <article class="events__time-price">
+                                <h4 class="events__time">22.00 - 00.00</h4>
+                                <h5 class="events__price">110 sek</h5>
+                            </article>
+                        </section>
+                    </li>
+                    <li class="events__list-item">
+                        <section class="events__date-box">
+                            <p class="events__date">29 MAR</p>
+                        </section>
+                        <section class="events__details">
+                            <h2 class="events__name">Pelle trubadur</h2>
+                            <h3 class="events__place">Pubelpuben</h3>
+                            <article class="events__time-price">
+                                <h4 class="events__time">22.00 - 00.00</h4>
+                                <h5 class="events__price">110 sek</h5>
+                            </article>
+                        </section>
+                    </li>
+                    <li class="events__list-item">
+                        <section class="events__date-box">
+                            <p class="events__date">29 MAR</p>
+                        </section>
+                        <section class="events__details">
+                            <h2 class="events__name">Kajsas kör</h2>
+                            <h3 class="events__place">Götaplatsen</h3>
+                            <article class="events__time-price">
+                                <h4 class="events__time">22.00 - 00.00</h4>
+                                <h5 class="events__price">110 sek</h5>
+                            </article>
+                        </section>
+                    </li>
+                    <li class="events__list-item">
+                        <section class="events__date-box">
+                            <p class="events__date">29 MAR</p>
+                        </section>
+                        <section class="events__details">
+                            <h2 class="events__name">Klubb Untz</h2>
+                            <h3 class="events__place">Din favoritkällare</h3>
+                            <article class="events__time-price">
+                                <h4 class="events__time">22.00 - 00.00</h4>
+                                <h5 class="events__price">110 sek</h5>
+                            </article>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            <div class="events event-detail">
+                <h1 class="event-detail__title events__title">Event</h1>
+                <p class="event-detail__subtitle">
+                    You are about to score<br />some tickets to
+                </p>
+                <h2 class="event-detail__name">Lasse-Stefanz</h2>
+                <h3 class="event-detail__description">21 mars 19.00 - 21.00</h3>
+                <h4 class="event-detail__place">@ Kjell Härnqvistsalen</h4>
+
+                <section class="ticket-amount event-detail__ticket-amount">
+                    <h5 class="ticket-amount__price">1050 sek</h5>
+                    <section class="ticket-amount__selection">
+                        <button class="ticket-amount__button">-</button>
+                        <input
+                            class="ticket-amount__input"
+                            type="number"
+                            placeholder="3" />
+                        <button class="ticket-amount__button">+</button>
+                    </section>
+                </section>
+                <button class="button event-detail__add-to-cart-btn">
+                    Lägg i varukorgen
+                </button>
+            </div>
+
+            <!-- Order detail section -->
+
+            <div class="events order-detail">
+                <h1 class="order-detail__title">Order</h1>
+                <section class="ticket-amount order-detail__ticket-amount">
+                    <h2 class="ticket-amount__name">Lasse-Stefanz</h2>
+                    <h4 class="ticket-amount__info">
+                        21 mars kl 19.00 - 21.00
+                    </h4>
+                    <section class="ticket-amount__selection">
+                        <button class="ticket-amount__button">-</button>
+                        <input
+                            class="ticket-amount__input"
+                            type="number"
+                            placeholder="3" />
+                        <button class="ticket-amount__button">+</button>
+                    </section>
+                </section>
+                <section class="ticket-amount order-detail__ticket-amount">
+                    <h2 class="ticket-amount__name">Pelle trubadur</h2>
+                    <h4 class="ticket-amount__info">
+                        21 mars kl 19.00 - 21.00
+                    </h4>
+                    <section class="ticket-amount__selection">
+                        <button class="ticket-amount__button">-</button>
+                        <input
+                            class="ticket-amount__input"
+                            type="number"
+                            placeholder="2" />
+                        <button class="ticket-amount__button">+</button>
+                    </section>
+                </section>
+                <section class="ticket-amount--more-info">
+                    <h2 class="ticket-amount__name">Klubb Untz</h2>
+                    <h4 class="ticket-amount__info">
+                        21 mars kl 19.00 - 21.00
+                    </h4>
+                    <section class="ticket-amount__selection">
+                        <button class="ticket-amount__button">-</button>
+                        <input
+                            class="ticket-amount__input"
+                            type="number"
+                            placeholder="1" />
+                        <button class="ticket-amount__button">+</button>
+                    </section>
+                </section>
+
+                <h5 class="order-detail__amount-description">
+                    Totalt värde på order
+                </h5>
+                <h3 class="order-detail__amount">1310 sek</h3>
+                <button class="button order-detail__send-order-btn">
+                    Skicka order
+                </button>
+            </div>
+
+            <!-- Ticket page section -->
+            <div class="events ticket-page">
+                <section class="ticket-page__ticket">
+                    <header class="ticket__heading">
+                        <p class="ticket__top-label">WHAT</p>
+                        <h1 class="ticket__name">Lasse-Stefanz</h1>
+                    </header>
+                    <section class="ticket__details">
+                        <p class="ticket__top-label">WHERE</p>
+                        <h2 class="ticket__place">Kjell Härnqvistsalen</h2>
+                        <h4 class="ticket__address">
+                            Göteborgs universitet. Pedagogen, hus A
+                        </h4>
+                    </section>
+                    <section class="ticket__info-grid">
+                        <article class="ticket__info-box">
+                            <p class="ticket__top-label">WHEN</p>
+                            <h3 class="ticket__date-time">21 Mar</h3>
+                        </article>
+                        <article class="ticket__info-box">
+                            <p class="ticket__top-label">FROM</p>
+                            <h3 class="ticket__date-time">19.00</h3>
+                        </article>
+                        <article class="ticket__info-box">
+                            <p class="ticket__top-label">TO</p>
+                            <h3 class="ticket__date-time">21.00</h3>
+                        </article>
+                    </section>
+                    <section class="ticket__info">
+                        <p class="ticket__top-label">INFO</p>
+                        <h5 class="ticket__seat-info">
+                            Section C - seat 233, bring umbrella
+                        </h5>
+                    </section>
+                    <section class="ticket__barcode-section">
+                        <img
+                            class="ticket__barcode-img"
+                            src="./Code-128.jpg"
+                            alt="Barcode for A2ED7" />
+                        <h6 class="ticket__barcode-info">#A2ED7</h6>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
